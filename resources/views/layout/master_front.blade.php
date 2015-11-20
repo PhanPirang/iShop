@@ -58,7 +58,7 @@
 			<header id="header">
 				<div class="header-middle">
 					<div class="container relative">
-						<a href="index.html" class="logo pull-left"></a>
+						<a href="{{URL::to('/')}}" class="logo pull-left"></a>
 						<div class="header-search pull-right">
 							<div class="header-search_filter">
 								<select class="formDropdown font-additional font-weight-normal" name="filterby" id="filterby">

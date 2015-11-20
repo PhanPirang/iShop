@@ -19,6 +19,13 @@
 					<i class="icon-user"></i>
 				</div>
 			</div>
+			<div class="form-group form-md-line-input has-success form-md-floating-label">
+				<div class="input-icon right">
+					<input type="text" class="form-control" name="price">
+					<label for="form_control_1">Price</label>
+					<i class="icon-user"></i>
+				</div>
+			</div>
 			<div class="form-group form-md-line-input form-md-floating-label">
 				<textarea class="form-control" rows="3" name="description"></textarea>
 				<label for="form_control_1">Description</label>

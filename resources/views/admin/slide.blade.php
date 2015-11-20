@@ -114,7 +114,7 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form" action="{{URL::To('slide/add')}}" method="POST" id="form_sample_2" enctype="multipart/form-data" novalidate="novalidate">
+									<form role="form" action="{{URL::To('admin/slide/add')}}" method="POST" id="form_sample_2" enctype="multipart/form-data" novalidate="novalidate">
 										<div class="form-body">
 											<div class="form-group form-md-line-input has-success form-md-floating-label">
 												<div class="input-icon right">
@@ -172,7 +172,7 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form" action="{{URL::To('slide/update')}}" method="POST"  enctype="multipart/form-data">
+									<form role="form" action="{{URL::To('admin/slide/update')}}" method="POST"  enctype="multipart/form-data">
 										<div class="form-body">
 											<div class="form-group form-md-line-input">
 												<div class="input-group">

@@ -38,6 +38,7 @@ class ProductController extends Controller
         
         $product = new Product();
         $product->name = $request->get('name');
+        $product->price = $request->get('price');
         $product->description = $request->get('description');
         $product->image_path = $filename;
         $product->cat_id = $request->get('category');

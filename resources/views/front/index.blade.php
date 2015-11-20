@@ -44,7 +44,7 @@
 							<div class="isotope-item  newproducts discount">
 								<div class="product-item hvr-underline-from-center">
 									<div class="product-item_body">
-										<img class="product-item_image" src="{{asset('front')}}/images/products/4.jpg" alt="Product">
+										<img class="product-item_image" src="{{asset('admin/assets/uploads/products' . '/' . $pro->image_path)}}" alt="Product">
 										<a class="product-item_link" href="{{URL::to('single') . '/' . $pro->id}}">
 											<span class="product-item_sale color-main font-additional customBgColor circle">-15%</span>
 										</a>
@@ -60,7 +60,7 @@
 									</div>
 									<a href="{{URL::to('single') . '/' . $pro->id}}" class="product-item_footer">
 										<div class="product-item_title font-additional font-weight-bold text-center text-uppercase">{{$pro->name}}</div>
-										<div class="product-item_price font-additional font-weight-normal customColor">$240.00 <span>$265.00</span></div>
+										<div class="product-item_price font-additional font-weight-normal customColor">${{$pro->price}} </div>
 									</a>
 								</div>
 							</div>
@@ -87,7 +87,7 @@
             <img src="{{asset('front')}}/images/seperator.png" alt="seperator">
           </div>
         </div>								
-						<a href="#" class="discount-info_link button-border font-additional font-weight-bold customBorderColor text-uppercase hvr-bounce-to-right before-bg" >VIEW COLLECTION</a>
+						
 					</div>
 				</div>
 			</div>

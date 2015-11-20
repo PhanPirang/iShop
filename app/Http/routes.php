@@ -15,12 +15,6 @@
     return view('welcome');
 });*/
 
-Route::get('user', function () {
-    return view('admin.user');
-});
-
-
-
 // Category
 Route::get('admin/category', 'CategoryController@getAll');
 
@@ -43,14 +37,16 @@ Route::get('admin/product/update', function () {
     return view('admin.product_update');
 });
 
+Route::get('single/{id}', 'ProductController@getRecord');
 
 
-Route::get('user', function () {
+// User
+Route::get('admin/user', function () {
     return view('admin.user');
 });
 
 
-
+// Slide
 Route::get('admin/slide', 'SlideController@getAll');
 
 Route::post('admin/slide/add', 'SlideController@store');
@@ -61,4 +57,3 @@ Route::post('admin/slide/update', 'SlideController@update');
 
 Route::get('/', 'SlideController@getSlideShow');
 
-Route::get('single/{id}', 'ProductController@getRecord');
