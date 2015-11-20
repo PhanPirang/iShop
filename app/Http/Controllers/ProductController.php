@@ -57,5 +57,10 @@ class ProductController extends Controller
         return view('front.single', compact('product'));
     }
 
+    public function getProduct(){
+        $products = Product::all();
+        return view('admin.product_list', compact('products'));
+    }
+
 
 }

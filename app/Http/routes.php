@@ -25,9 +25,7 @@ Route::post('admin/category/destroy', 'CategoryController@destroy');
 Route::post('admin/category/update', 'CategoryController@update');
 
 // Product
-Route::get('admin/product/list', function () {
-    return view('admin.product_list');
-});
+Route::get('admin/product/list', 'ProductController@getProduct');
 
 Route::get('admin/product', 'ProductController@getAll');
 
