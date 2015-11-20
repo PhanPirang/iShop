@@ -178,12 +178,12 @@
 						<span class="title">Category</span>
 					</a>
 				</li>
-				<li class="start ">
+				<!-- <li class="start ">
 					<a href="{{URL::To('admin/user')}}">
 						<i class="icon-home"></i>
 						<span class="title">User Management</span>
 					</a>
-				</li>
+				</li> -->
 				<li class="start ">
 					<a href="{{URL::To('admin/slide')}}">
 						<i class="icon-home"></i>
