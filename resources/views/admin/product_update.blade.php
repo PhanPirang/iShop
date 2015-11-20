@@ -6,8 +6,6 @@
 
 @section('page_styles')
 	<script type="text/javascript" src="{{asset('admin/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css')}}"></script>
-@stop
-
 @section('content')
 	<form role="form">
 		<div class="form-body">

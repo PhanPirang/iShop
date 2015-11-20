@@ -31,7 +31,7 @@ class ProductController extends Controller
         $filename = "";
         if ($request->hasFile('thumbnail')) {
             $file = $request->file('thumbnail');
-            $destinationPath = 'admin/assets/uploads';
+            $destinationPath = 'admin/assets/uploads/products';
             $filename = str_random(20). $file->getClientOriginalName();
             $upload_success = $file->move($destinationPath, $filename);
         }
@@ -44,15 +44,17 @@ class ProductController extends Controller
         $product->p_s_id = 1;
         $product->promotion_id = $request->get('promotion');
         $product->save();  
-        return Redirect::to('product');
+        return Redirect::to('admin/product');
     }
 
     public function destroy(Request $request){
 
     }
 
-    public function update (Request $request){
-        
+    public function getRecord($id){
+        $product = Product::find($id);
+        return view('front.single', compact('product'));
     }
+
 
 }

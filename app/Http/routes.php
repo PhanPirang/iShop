@@ -11,42 +11,54 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::get('user', function () {
     return view('admin.user');
 });
 
+
+
 // Category
-Route::get('category', 'CategoryController@getAll');
+Route::get('admin/category', 'CategoryController@getAll');
 
-Route::post('category/add', 'CategoryController@store');
+Route::post('admin/category/add', 'CategoryController@store');
 
-Route::post('category/destroy', 'CategoryController@destroy');
+Route::post('admin/category/destroy', 'CategoryController@destroy');
 
-Route::post('category/update', 'CategoryController@update');
+Route::post('admin/category/update', 'CategoryController@update');
 
 // Product
-Route::get('product/list', function () {
+Route::get('admin/product/list', function () {
     return view('admin.product_list');
 });
 
-Route::get('product', 'ProductController@getAll');
+Route::get('admin/product', 'ProductController@getAll');
 
-Route::post('product/add', 'ProductController@store');
+Route::post('admin/product/add', 'ProductController@store');
 
-Route::get('product/update', function () {
+Route::get('admin/product/update', function () {
     return view('admin.product_update');
 });
+
+
 
 Route::get('user', function () {
     return view('admin.user');
 });
 
-Route::get('slide', function () {
-    return view('admin.slide');
-});
 
 
+Route::get('admin/slide', 'SlideController@getAll');
+
+Route::post('admin/slide/add', 'SlideController@store');
+
+Route::post('admin/slide/destroy', 'SlideController@destroy');
+
+Route::post('admin/slide/update', 'SlideController@update');
+
+Route::get('/', 'SlideController@getSlideShow');
+
+Route::get('single/{id}', 'ProductController@getRecord');

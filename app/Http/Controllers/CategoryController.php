@@ -22,7 +22,7 @@ class CategoryController extends Controller
         $category->name = $request->input('name');
         $category->description = $request->input('description');
         $category->save();
-        return Redirect::to('category');
+        return Redirect::to('admin/category');
     }
 
     public function getAll(){
@@ -42,7 +42,7 @@ class CategoryController extends Controller
         $row->name = $request->input('name1');
         $row->description = $request->input('description1');
         $row->save();
-        return Redirect::to('category');
+        return Redirect::to('admin/category');
     }
 
 }

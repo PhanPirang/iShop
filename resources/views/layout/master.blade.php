@@ -520,7 +520,7 @@
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="{{URL::To('product/add')}}">
+							<a href="{{URL::To('product')}}">
 							<i class="icon-home"></i>
 							Add</a>
 						</li>

@@ -96,7 +96,7 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form" action="{{URL::To('category/add')}}" method="POST" id="form_sample_2" novalidate="novalidate">
+									<form role="form" action="{{URL::To('admin/category/add')}}" method="POST" id="form_sample_2" novalidate="novalidate">
 										<div class="form-body">
 											<div class="form-group form-md-line-input has-success form-md-floating-label">
 												<div class="input-icon right">
@@ -133,7 +133,7 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form" action="{{URL::To('category/update')}}" method="POST">
+									<form role="form" action="{{URL::To('admin/category/update')}}" method="POST">
 										<div class="form-body">
 											<div class="form-group form-md-line-input">
 												<div class="input-group">

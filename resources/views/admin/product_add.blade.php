@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-	<form role="form" method="POST" action="{{URL::To('product/add')}}" enctype="multipart/form-data">
+	<form role="form" method="POST" action="{{URL::To('admin/product/add')}}" enctype="multipart/form-data">
 		<div class="form-body">
 			<div class="form-group form-md-line-input has-success form-md-floating-label">
 				<div class="input-icon right">

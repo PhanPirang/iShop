@@ -13,7 +13,7 @@
 	<div class="portlet box grey-cascade">
 		<div class="portlet-title">
 			<div class="caption">
-				<i class="fa fa-globe"></i>User Management
+				<i class="fa fa-globe"></i>Slides
 			</div>
 		</div>
 		<div class="portlet-body">
@@ -21,13 +21,8 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="btn-group">
-							<button id="sample_editable_1_new" href="#basic" data-toggle="modal" class="btn green">
+							<button id="sample_editable_1_new" href="#add" data-toggle="modal" class="btn green">
 								Add New <i class="fa fa-plus"></i>
-							</button>
-						</div>
-						<div class="btn-group">
-							<button id="sample_editable_1_new" href="#update" data-toggle="modal" class="btn green">
-								Update <i class="fa fa-plus"></i>
 							</button>
 						</div>
 					</div>
@@ -60,293 +55,107 @@
 						No
 					</th>
 					<th>
-						Username
+						Caption
 					</th>
 					<th>
-						Name
+						Description
 					</th>
 					<th>
-						Email
+						Image
 					</th>
 					<th>
-						Register Date
+						Order
+					</th>
+					<th>
+						Status
+					</th>
+					<th>
+						Action
 					</th>
 				</tr>
 				</thead>
 				<tbody>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						John Doe
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">
-							shuxer@gmail.com </a>
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-				</tr>
+				@foreach($slides as $key => $slide)
+					<tr class="odd gradeX">
+						<td>
+							{{$key+1}}
+						</td>
+						<td>
+							{{$slide->caption}}
+						</td>
+						<td>
+							{{$slide->description}}
+						</td>
+						<td>
+							<img src="{{ asset('admin/assets/uploads/slides') . '/' . $slide->image_url }}" alt="" width="200">
+						</td>
+						<td>
+							{{$slide->order}}
+						</td>
+						<td>
+							{{($slide->status==1)?"Show":"Hide"}}
+						</td>
+						<td>
+							<button class="btn btn-danger btn-xs btn_slide_delete">Delete</button>
+							<button href="#update" class="btn btn-info btn-xs btn_slide_update" data-toggle="modal">Update</button>
+							<input type="hidden" value="{{$slide->id}}">
+						</td>
+					</tr>
+				@endforeach
 				</tbody>
 			</table>
-			<div class="modal fade" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+			<div class="modal fade" id="add" tabindex="-1" role="add" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title">Modal Title</h4>
+							<h4 class="modal-title">Add New Slide</h4>
 						</div>
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form">
+									<form role="form" action="{{URL::To('slide/add')}}" method="POST" id="form_sample_2" enctype="multipart/form-data" novalidate="novalidate">
 										<div class="form-body">
 											<div class="form-group form-md-line-input has-success form-md-floating-label">
 												<div class="input-icon right">
-													<input type="text" class="form-control">
-													<label for="form_control_1">Name</label>
+													<input type="hidden" name="_token" value="{{ csrf_token() }}">
+													<input type="text" class="form-control" name="caption">
+													<label for="form_control_1">Slide Caption</label>
 													<i class="icon-user"></i>
 												</div>
 											</div>
-											<div class="form-group form-md-line-input has-success form-md-floating-label">
-												<div class="input-icon right">
-													<input type="text" class="form-control">
-													<label for="form_control_1">Username</label>
-													<i class="icon-user"></i>
-												</div>
+											<div class="form-group form-md-line-input has-info">
+												<select class="form-control" id="form_control_1" name="status">
+													<option value="1">Show</option>
+													<option value="0">Hide</option>
+												</select>
+												<label for="form_control_1">Status</label>
 											</div>
-											<div class="form-group form-md-line-input has-success form-md-floating-label">
-												<div class="input-icon right">
-													<input type="text" class="form-control">
-													<label for="form_control_1">E-mail</label>
-													<i class="icon-user"></i>
-												</div>
+											<div class="form-group form-md-line-input has-info">
+												<select class="form-control" id="form_control_1" name="order">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<label for="form_control_1">Order</label>
 											</div>
-											<div class="form-group form-md-line-input has-success form-md-floating-label">
-												<div class="input-icon right">
-													<input type="password" class="form-control">
-													<label for="form_control_1">Password</label>
-													<i class="icon-user"></i>
-												</div>
+											<div class="form-group form-md-line-input form-md-floating-label">
+												<textarea class="form-control" rows="3" name="description"></textarea>
+												<label for="form_control_1">Description</label>
 											</div>
-											<div class="form-group form-md-line-input has-success form-md-floating-label">
-												<div class="input-icon right">
-													<input type="password" class="form-control">
-													<label for="form_control_1">Confirm Password</label>
-													<i class="icon-user"></i>
-												</div>
+											<div class="form-group form-md-line-input">
+												<input type="file" class="form-control" name="image">
+												<label for="form_control_1">Image:</label>
+											</div>
+											<div class="form-group form-md-line-input form-md-floating-label">
+												<button type="submit" class="btn blue">Save</button>
 											</div>
 										</div>
 									</form>
 								</div>
 							</div>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn blue">Save changes</button>
 						</div>
 					</div>
 					<!-- /.modal-content -->
@@ -358,66 +167,56 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title">Modal Title</h4>
+							<h4 class="modal-title">Update</h4>
 						</div>
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form">
+									<form role="form" action="{{URL::To('slide/update')}}" method="POST"  enctype="multipart/form-data">
 										<div class="form-body">
 											<div class="form-group form-md-line-input">
 												<div class="input-group">
-													<input type="text" class="form-control" placeholder="Category Name">
-													<label for="form_control_1">Name</label>
-																		<span class="input-group-addon">
-																		<i class="fa fa-envelope"></i>
-																		</span>
+													<input type="hidden" id="id" name="id">
+													<input type="hidden" name="_token" value="{{ csrf_token() }}">
+													<input type="text" class="form-control" placeholder="Caption" name="caption1" id="caption1">
+													<label for="form_control_1">Slide Caption</label>
+													<span class="input-group-addon">
+														<i class="fa fa-envelope"></i>
+													</span>
 												</div>
 											</div>
 											<div class="form-group form-md-line-input">
-												<div class="input-group">
-													<input type="text" class="form-control" placeholder="Category Name">
-													<label for="form_control_1">Username</label>
-																		<span class="input-group-addon">
-																		<i class="fa fa-envelope"></i>
-																		</span>
-												</div>
+												<textarea class="form-control" rows="3" placeholder="Some Description..." name="description1" id="description1"></textarea>
+												<label for="form_control_1">Description</label>
+											</div>
+											<div class="form-group form-md-line-input has-info">
+												<select class="form-control" name="status1" id="status1">
+													<option value="1">Show</option>
+													<option value="0">Hide</option>
+												</select>
+												<label for="form_control_1">Status</label>
+											</div>
+											<div class="form-group form-md-line-input has-info">
+												<select class="form-control" name="order1" id="order1">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+												<label for="form_control_1">Order</label>
 											</div>
 											<div class="form-group form-md-line-input">
-												<div class="input-group">
-													<input type="text" class="form-control" placeholder="Category Name">
-													<label for="form_control_1">E-mail</label>
-																		<span class="input-group-addon">
-																		<i class="fa fa-envelope"></i>
-																		</span>
-												</div>
+												<input type="file" class="form-control" name="image">
+												<label for="form_control_1">Image:</label>
 											</div>
-											<div class="form-group form-md-line-input">
-												<div class="input-group">
-													<input type="password" class="form-control" placeholder="Category Name">
-													<label for="form_control_1">Password</label>
-																		<span class="input-group-addon">
-																		<i class="fa fa-envelope"></i>
-																		</span>
-												</div>
-											</div>
-											<div class="form-group form-md-line-input">
-												<div class="input-group">
-													<input type="password" class="form-control" placeholder="Category Name">
-													<label for="form_control_1">Confirm Password</label>
-																		<span class="input-group-addon">
-																		<i class="fa fa-envelope"></i>
-																		</span>
-												</div>
+											<div class="form-group form-md-line-input form-md-floating-label">
+												<button type="submit" class="btn blue">Save Changes</button>
 											</div>
 										</div>
 									</form>
 								</div>
 							</div>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn blue">Save changes</button>
 						</div>
 					</div>
 					<!-- /.modal-content -->
