@@ -21,13 +21,8 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="btn-group">
-							<button id="sample_editable_1_new" href="#basic" data-toggle="modal" class="btn green">
+							<button id="sample_editable_1_new" href="#add" data-toggle="modal" class="btn green">
 								Add New <i class="fa fa-plus"></i>
-							</button>
-						</div>
-						<div class="btn-group">
-							<button id="sample_editable_1_new" href="#update" data-toggle="modal" class="btn green">
-								Update <i class="fa fa-plus"></i>
 							</button>
 						</div>
 					</div>
@@ -63,263 +58,35 @@
 						Username
 					</th>
 					<th>
-						Email
+						Description
 					</th>
 					<th>
-						Points
-					</th>
-					<th>
-						Joined
-					</th>
-					<th>
-						Status
+						Action
 					</th>
 				</tr>
 				</thead>
 				<tbody>
+				@foreach($result as $key => $cat)
 				<tr class="odd gradeX">
 					<td>
-						1
+						{{$key+1}}
 					</td>
 					<td>
-						shuxer
+						{{$cat->name}}
 					</td>
 					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
+						{{$cat->description}}
 					</td>
 					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
+						<button class="btn btn-danger btn-xs btn_cat_delete">Delete</button>
+						<button href="#update" class="btn btn-info btn-xs btn_cat_update" data-toggle="modal">Update</button>
+						<input type="hidden" value="{{$cat->id}}">
 					</td>
 				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
-				<tr class="odd gradeX">
-					<td>
-						1
-					</td>
-					<td>
-						shuxer
-					</td>
-					<td>
-						<a href="mailto:shuxer@gmail.com">shuxer@gmail.com </a>
-					</td>
-					<td>
-						120
-					</td>
-					<td class="center">
-						12 Jan 2012
-					</td>
-					<td>
-						<span class="label label-sm label-success">Approved </span>
-					</td>
-				</tr>
+				@endforeach
 				</tbody>
 			</table>
-			<div class="modal fade" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+			<div class="modal fade" id="add" tabindex="-1" role="add" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -329,7 +96,7 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form" action="{{URL::To('category/add')}}" method="POST">
+									<form role="form" action="{{URL::To('category/add')}}" method="POST" id="form_sample_2" novalidate="novalidate">
 										<div class="form-body">
 											<div class="form-group form-md-line-input has-success form-md-floating-label">
 												<div class="input-icon right">
@@ -341,19 +108,15 @@
 											</div>
 											<div class="form-group form-md-line-input form-md-floating-label">
 												<textarea class="form-control" rows="3" name="description"></textarea>
-												<label for="form_control_1">Textarea input</label>
+												<label for="form_control_1">Description</label>
 											</div>
 											<div class="form-group form-md-line-input form-md-floating-label">
-												<button type="submit" class="btn blue">Save changes</button>
+												<button type="submit" class="btn blue">Save</button>
 											</div>
 										</div>
 									</form>
 								</div>
 							</div>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-							<button type="submit" class="btn blue">Save changes</button>
 						</div>
 					</div>
 					<!-- /.modal-content -->
@@ -370,11 +133,13 @@
 						<div class="modal-body">
 							<div class="row">
 								<div class="col-md-12">
-									<form role="form">
+									<form role="form" action="{{URL::To('category/update')}}" method="POST">
 										<div class="form-body">
 											<div class="form-group form-md-line-input">
 												<div class="input-group">
-													<input type="text" class="form-control" placeholder="Category Name">
+													<input type="hidden" id="id" name="id">
+													<input type="hidden" name="_token" value="{{ csrf_token() }}">
+													<input type="text" class="form-control" placeholder="Category Name" name="name1" id="name1">
 													<label for="form_control_1">Category name</label>
 													<span class="input-group-addon">
 														<i class="fa fa-envelope"></i>
@@ -382,17 +147,16 @@
 												</div>
 											</div>
 											<div class="form-group form-md-line-input">
-												<textarea class="form-control" rows="3" placeholder="Some Description..."></textarea>
+												<textarea class="form-control" rows="3" placeholder="Some Description..." name="description1" id="description1"></textarea>
 												<label for="form_control_1">Description</label>
+											</div>
+											<div class="form-group form-md-line-input form-md-floating-label">
+												<button type="submit" class="btn blue">Save Changes</button>
 											</div>
 										</div>
 									</form>
 								</div>
 							</div>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn blue">Save changes</button>
 						</div>
 					</div>
 					<!-- /.modal-content -->
@@ -407,4 +171,5 @@
 @section('page_scripts')
 	<script type="text/javascript" src="{{asset('admin/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('admin/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js')}}"></script>
+	<script type="text/javascript" src="{{asset('admin/assets/admin/pages/scripts/form-validation.js')}}"></script>
 @stop

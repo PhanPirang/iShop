@@ -19,19 +19,17 @@ Route::get('user', function () {
     return view('admin.user');
 });
 
-Route::get('category', function () {
-    return view('admin.category');
-});
+Route::post('category/add', 'CategoryController@store');
 
-//Route::post('category/add', 'CategoryController@index');
+//Route::post('category/add', function(){
+//    return Input::get('name');
+//});
+Route::get('category', 'CategoryController@getAll');
 
-Route::post('category/add', function(){
-    return Input::get('name');
-});
+Route::post('category/destroy', 'CategoryController@destroy');
 
-Route::get('category', function(){
-    return view('admin.category');
-});
+Route::post('category/update', 'CategoryController@update');
+
 
 Route::get('product/list', function () {
     return view('admin.product_list');
@@ -39,6 +37,14 @@ Route::get('product/list', function () {
 
 Route::get('product/update', function () {
     return view('admin.product_update');
+});
+
+Route::get('user', function () {
+    return view('admin.user');
+});
+
+Route::get('slide', function () {
+    return view('admin.slide');
 });
 
 

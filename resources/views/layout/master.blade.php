@@ -11,6 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="_token" content="{{ csrf_token() }}"/>
 <meta content="" name="description"/>
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -20,6 +21,7 @@
 <link href="{{asset('admin/assets/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('admin/assets/global/plugins/uniform/css/uniform.default.css')}}" rel="stylesheet" type="text/css">
 <link href="{{asset('admin/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css')}}" rel="stylesheet" type="text/css"/>
+<link href="{{asset('admin/assets/global/plugins/sweet-alert/sweetalert.css')}}" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
 @yield('page_styles')
@@ -529,6 +531,24 @@
 						</li>
 					</ul>
 				</li>
+				<li class="start ">
+					<a href="{{URL::To('category')}}">
+						<i class="icon-home"></i>
+						<span class="title">Category</span>
+					</a>
+				</li>
+				<li class="start ">
+					<a href="{{URL::To('user')}}">
+						<i class="icon-home"></i>
+						<span class="title">User Management</span>
+					</a>
+				</li>
+				<li class="start ">
+					<a href="{{URL::To('slide')}}">
+						<i class="icon-home"></i>
+						<span class="title">Slide Show</span>
+					</a>
+				</li>
 			</ul>
 			<!-- END SIDEBAR MENU -->
 		</div>
@@ -716,6 +736,7 @@
 <script src="{{asset('admin/assets/global/plugins/jquery.cokie.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('admin/assets/global/plugins/uniform/jquery.uniform.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('admin/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/global/plugins/sweet-alert/sweetalert.min.js')}}" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 @yield('page_scripts')
@@ -724,12 +745,15 @@
 <script src="{{asset('admin/assets/admin/layout2/scripts/layout.js')}}" type="text/javascript"></script>
 <script src="{{asset('admin/assets/admin/layout2/scripts/demo.js')}}" type="text/javascript"></script>
 <script src="{{asset('admin/assets/admin/pages/scripts/table-managed.js')}}"></script>
+<script src="{{asset('admin/assets/custom/myjs.js')}}"></script>
+
 <script>
       jQuery(document).ready(function() {    
         Metronic.init(); // init metronic core components
 		Layout.init(); // init current layout
 		Demo.init(); // init demo features
 		TableManaged.init();
+		FormValidation.init();
       });
    </script>
 <!-- END JAVASCRIPTS -->
