@@ -754,6 +754,7 @@
 		Demo.init(); // init demo features
 		TableManaged.init();
 		FormValidation.init();
+		ComponentsFormTools.init();
       });
    </script>
 <!-- END JAVASCRIPTS -->

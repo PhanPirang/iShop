@@ -1,0 +1,5 @@
+http://www.androidhive.info/2014/07/android-custom-listview-with-image-and-text-using-volley/
+
+http://www.androidhive.info/2014/05/android-working-with-volley-library-1/
+
+http://www.androidhive.info/2015/05/android-swipe-down-to-refresh-listview-tutorial/

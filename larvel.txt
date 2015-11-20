@@ -1,0 +1,15 @@
+https://www.youtube.com/user/devdojo/videos
+
+https://www.youtube.com/watch?v=hJRt0BDF0Do
+
+https://www.youtube.com/watch?v=xn2snypAcIQ
+
+http://tutsnare.com/upload-multiple-files-in-laravel/
+
+http://www.phpgang.com/image-upload-and-resize-using-image-intervention-in-laravel_889.html
+
+https://laracasts.com/discuss/channels/general-discussion/laravel-5-image-upload-and-resize
+
+http://laravel.io/forum/07-27-2014-cant-upload-a-photo-to-laravel
+
+http://image.intervention.io/
