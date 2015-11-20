@@ -14,3 +14,31 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('user', function () {
+    return view('admin.user');
+});
+
+Route::get('category', function () {
+    return view('admin.category');
+});
+
+//Route::post('category/add', 'CategoryController@index');
+
+Route::post('category/add', function(){
+    return Input::get('name');
+});
+
+Route::get('category', function(){
+    return view('admin.category');
+});
+
+Route::get('product/list', function () {
+    return view('admin.product_list');
+});
+
+Route::get('product/update', function () {
+    return view('admin.product_update');
+});
+
+
