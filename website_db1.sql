@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
+Source Server         : MySQL
 Source Server Version : 50624
 Source Host           : localhost:3306
 Source Database       : website_db
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2015-11-20 17:08:12
+Date: 2015-11-21 03:42:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -87,6 +87,27 @@ CREATE TABLE `tbl_promotions` (
 -- Records of tbl_promotions
 -- ----------------------------
 INSERT INTO `tbl_promotions` VALUES ('1', 'Happy New Year', null, '2015', '2015-11-11', '2015-11-17');
+
+-- ----------------------------
+-- Table structure for tbl_slides
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_slides`;
+CREATE TABLE `tbl_slides` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `caption` varchar(255) DEFAULT NULL,
+  `image_url` varchar(255) DEFAULT NULL,
+  `order` int(11) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tbl_slides
+-- ----------------------------
+INSERT INTO `tbl_slides` VALUES ('2', 'Grand Opening', 'EZpGOlWxW1X4ixhNEgAFslide-1.jpg', '1', '1', 'Discount up to 50%');
+INSERT INTO `tbl_slides` VALUES ('3', 'Coming Soon !', 'VM8S0POn9ICRfzL8D2zTslide-2.jpg', '1', '1', 'December 2015');
+INSERT INTO `tbl_slides` VALUES ('4', 'Europe Product !', '8TpM87I9hEGEDGLKNyvLslide-3.jpg', '2', '1', 'Big Sale !');
 
 -- ----------------------------
 -- Table structure for tbl_users
